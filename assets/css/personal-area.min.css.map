@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,SAAS,AAAC,CACR,gBAAgB,CAAE,OAAO,CAC1B",
+    "sources": [
+        "../../personal-area.scss",
+        "../../scss/_variables.scss",
+        "../../scss/_personal.scss"
+    ],
+    "names": [],
+    "file": "personal-area.min.css"
+}
