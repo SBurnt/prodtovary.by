@@ -107,6 +107,7 @@
   &__btn-wrap {
     display: flex;
     justify-content: center;
+    margin: 35px 0 15px;
   }
 
   &__btn {
@@ -125,6 +126,122 @@
 
     &:hover {
       background: #56bbcf;
+    }
+  }
+
+  &__input-label {
+    font-size: 16px;
+    line-height: 17px;
+    color: #666666;
+
+    span {
+      color: #29a1ba;
+    }
+  }
+
+  &__tooltip-wrap {
+    position: relative;
+
+    display: inline-block;
+  }
+
+  &__tooltip {
+    position: relative;
+    top: 3px;
+
+    width: 15px;
+    height: 15px;
+    margin-left: 2px;
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover + .personal__tooltip-text,
+    &:focus + .personal__tooltip-text {
+      display: block;
+    }
+  }
+
+  &__tooltip-text {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 5px);
+    z-index: 2;
+
+    display: none;
+    width: max-content;
+    max-width: 200px;
+    padding: 11px 17px;
+
+    font-size: 12px;
+    line-height: 13px;
+    color: #777777;
+
+    background: #ffffff;
+    border: 1px solid #d9dbda;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 599px) {
+      max-width: 170px;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 15px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    color: #9a9a9a;
+  }
+
+  &__desc {
+    margin-bottom: 15px;
+
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    color: #9a9a9a;
+  }
+
+  &__page-back-link-wrap {
+    margin-top: 30px;
+
+    text-align: center;
+  }
+
+  &__page-back-link {
+    position: relative;
+
+    padding-left: 39px;
+
+    font-size: 16px;
+    line-height: 17px;
+    color: #bebebe;
+    text-decoration: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+
+      width: 28px;
+      height: 28px;
+
+      background: url(../img/ico-page-back.png) no-repeat;
+    }
+
+    &:hover {
+      color: #464646;
+
+      &::before {
+        background: url(../img/ico-page-back-hov.png) no-repeat;
+      }
     }
   }
 }
