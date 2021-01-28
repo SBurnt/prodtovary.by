@@ -1,3 +1,130 @@
 .personal {
-  background-color: #ffffff;
+  &-page {
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    background-color: #ffc29c;
+    background-image: url(../img/personal-page-bg.png);
+
+    @media (max-width: 599px) {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  }
+
+  &__wrap {
+    max-width: 444px;
+    margin: 0 auto;
+    padding: 30px 0 50px;
+
+    background: #ffffff;
+    border-radius: 35px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  }
+
+  &__inner {
+    max-width: 309px;
+    margin: 0 auto;
+  }
+
+  &__img-logo-wrap {
+    margin-bottom: 32px;
+
+    text-align: center;
+  }
+
+  &__img-logo {
+    background: none;
+  }
+
+  &__entrance {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__entrance-link {
+    font-size: 20px;
+    line-height: 26px;
+    color: #b3b3b3;
+    text-decoration: none;
+
+    &:hover {
+      color: #666666;
+    }
+
+    &.active {
+      color: #666666;
+
+      border-bottom: 2px solid #4ab9d0;
+    }
+  }
+
+  &__input-wrap {
+    position: relative;
+
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 7px 41px;
+
+    color: #777777;
+
+    background: #fafafa;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+
+    &::placeholder {
+      color: #777777;
+    }
+  }
+
+  &__input-img {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+    color: #aeaeae;
+
+    a {
+      color: #28a0b9;
+    }
+  }
+
+  &__btn-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    min-width: 135px;
+    height: 42px;
+    padding: 0 32px;
+
+    font-size: 18px;
+    line-height: 19px;
+    color: #ffffff;
+
+    background: #28a0b9;
+    border: none;
+    border-radius: 38px;
+    cursor: pointer;
+
+    &:hover {
+      background: #56bbcf;
+    }
+  }
 }
