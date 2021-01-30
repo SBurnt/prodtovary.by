@@ -69,6 +69,7 @@
   &__input-wrap {
     position: relative;
 
+    display: flex;
     margin-bottom: 10px;
   }
 
@@ -87,10 +88,79 @@
     }
   }
 
+  &__input-radio {
+    position: relative;
+    // display: flex;
+    // flex: 0 0 17px;
+
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+    padding: 0;
+
+    background-color: #fafafa;
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+
+    transition: border-color 0.15s ease-in-out, transform 0.15s ease-in-out;
+
+    appearance: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 11px;
+      height: 11px;
+
+      line-height: 1;
+
+      background-image: none;
+      border-radius: 50%;
+      transform: scale(0);
+
+      transition: transform 0.15s ease-in-out;
+      transition-delay: 0.1s;
+
+      fill: #ffffff;
+    }
+
+    &:checked::after {
+      background-color: #29a1ba;
+      transform: scale(1);
+    }
+  }
+
   &__input-img {
     position: absolute;
     top: 11px;
     left: 12px;
+  }
+
+  &__input-img-radio {
+    margin-right: 8px;
+  }
+
+  &__select {
+    width: 78px;
+    padding: 10px 10px 9px 10px;
+
+    font-size: 14px;
+    line-height: 15px;
+    color: #777777;
+
+    background: #fafafa;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+  }
+
+  &__select:not(:last-child) {
+    margin-right: 10px;
   }
 
   &__text {
@@ -136,6 +206,21 @@
 
     span {
       color: #29a1ba;
+    }
+  }
+
+  &__input-label-radio {
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    line-height: 15px;
+    color: #777777;
+  }
+
+  &__input-label-radio {
+    &:not(:last-child) {
+      margin-right: 45px;
     }
   }
 
@@ -246,6 +331,98 @@
       &::before {
         background: url(../img/ico-page-back-hov.png) no-repeat;
       }
+    }
+  }
+
+  &__choices {
+    width: 80px;
+    margin-right: 10px;
+    margin-bottom: 0;
+
+    &::after {
+      border-color: #7e7e7e transparent transparent !important;
+    }
+
+    .choices__placeholder {
+      opacity: 1;
+    }
+
+    .choices__inner {
+      min-height: auto;
+      padding: 10px 14px;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+      color: #777777;
+
+      background: #fafafa;
+      border: 1px solid #c4c4c4;
+      border-radius: 3px;
+    }
+
+    .choices__list--dropdown {
+      border-radius: 0 0 3px 3px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .choices__list--dropdown .choices__item--selectable:after {
+      content: none;
+    }
+
+    .choices__list--dropdown .choices__item--selectable.is-highlighted {
+      color: #ffffff;
+
+      background: #999999;
+    }
+
+    .choices__list--dropdown .choices__item {
+      padding: 4px 20px;
+
+      font-size: 12px;
+      line-height: 13px;
+      color: #666666;
+    }
+
+    .choices__list--dropdown .choices__item.choices__placeholder {
+      opacity: 0.5;
+    }
+
+    .choices__list {
+      max-height: 125px;
+      -webkit-overflow-scrolling: touch;
+
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      overscroll-behavior: contain;
+      scrollbar-color: #999999 transparent;
+      scrollbar-width: thin;
+    }
+    .choices__list::-webkit-scrollbar {
+      width: 3px;
+      height: 3px;
+    }
+    .choices__list::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    .choices__list::-webkit-scrollbar-thumb {
+      background-color: #999999;
+      border-radius: 2px;
+    }
+    .choices__list::-webkit-scrollbar-button {
+      background-color: transparent;
+      border-radius: 2px;
+    }
+    .choices__list::-webkit-scrollbar-thumb:hover {
+      background-color: #777676;
+    }
+    .choices__list::-webkit-scrollbar-thumb:active {
+      background-color: #777676;
+    }
+    .choices__list::-webkit-scrollbar-thumb:vertical {
+      min-height: 100px;
+    }
+    .choices__list::-webkit-scrollbar-thumb:horizontal {
+      min-width: 100px;
     }
   }
 }
