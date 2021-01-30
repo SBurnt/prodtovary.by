@@ -63,8 +63,6 @@ const defaultSelect = () => {
   const selectCollection = document.querySelectorAll('.js-personal-select');
 
   if (selectCollection) {
-    console.log('select');
-
     selectCollection.forEach((el) => {
       const choices = new Choices(el, {
         searchEnabled: false,
@@ -79,5 +77,24 @@ const defaultSelect = () => {
 };
 
 defaultSelect();
+
+const defaultSelectPet = () => {
+  const selectCollection = document.querySelectorAll('.js-personal-select-pet');
+
+  if (selectCollection) {
+    selectCollection.forEach((el) => {
+      const choices = new Choices(el, {
+        searchEnabled: false,
+        // placeholder: true,
+        shouldSort: false,
+        classNames: {
+          containerOuter: 'choices personal__choices pet',
+        },
+      });
+    });
+  }
+};
+
+defaultSelectPet();
 
 // кастомный select на дату рождения END

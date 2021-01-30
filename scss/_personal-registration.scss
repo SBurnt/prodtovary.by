@@ -44,6 +44,55 @@
     border-radius: 17px;
   }
 
+  &__del-pet {
+    display: block;
+    margin-left: auto;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 15px;
+    color: #29a1ba;
+    text-decoration: underline;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__add-pet {
+    display: flex;
+    align-items: center;
+    margin: 20px auto 0;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 17px;
+    color: #9a9a9a;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    svg {
+      margin-right: 11px;
+    }
+
+    &:hover {
+      color: #464646;
+
+      svg {
+        path,
+        rect {
+          stroke: #464646;
+        }
+      }
+    }
+  }
+
   &__tabs {
     margin-top: 36px;
   }
