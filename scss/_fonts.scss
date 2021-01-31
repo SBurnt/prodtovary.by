@@ -1,0 +1,22 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Futuris";
+
+  font-display: swap;
+  src: local("Futuris"), local("Futuris"),
+  url("../fonts/Futuris/Futuris.woff2") format("woff2"),
+  url("../fonts/Futuris/Futuris.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Futuris";
+
+  font-display: swap;
+  src: local("Futuris Bold"), local("Futuris-Bold"),
+  url("../fonts/Futuris/Futuris-bold.woff2") format("woff2"),
+  url("../fonts/Futuris/Futuris-bold.woff") format("woff");
+}
+
