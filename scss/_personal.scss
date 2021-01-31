@@ -397,6 +397,21 @@
     }
   }
 
+  &__page-order-link {
+    display: block;
+    margin-top: 30px;
+
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    color: #29a1ba;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
   &__choices {
     width: 80px;
     margin-right: 10px;
