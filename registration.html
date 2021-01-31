@@ -196,7 +196,7 @@
                       </div>
                       <div class="personal__input-wrap">
                         <input class="personal__input" id="personal__input-card" type="text" name="discount-card"
-                          placeholder="12345" maxlength="5" onkeyup="this.value = this.value.replace(/[^\d]/g,'')">
+                          placeholder="12345" maxlength="5" minlength="5" autocomplete="off">
                         <img class="personal__input-img" src="assets/img/ico-discount-card.png" alt="ico discount-card">
                       </div>
                     </div>
@@ -299,7 +299,7 @@
                       </div>
                       <div class="personal__input-wrap">
                         <input class="personal__input" id="personal__input-tel" type="tel" name="phone" inputmode="tel"
-                          placeholder="+375(__)___-__-__" onkeyup="this.value = this.value.replace(/[^\+\d]/g,'')">
+                          placeholder="+375(__)___-__-__" autocomplete="off">
                         <img class="personal__input-img" src="assets/img/ico-phone.png" alt="ico phone">
                       </div>
                       <div class="personal__input-label-wrap">
@@ -357,7 +357,7 @@
                           <option value="14">14</option>
                           <option value="15">15</option>
                         </select>
-                        <select class="personal__select js-personal-select" name="month-birth">
+                        <select class="personal__select js-personal-select" id="personal__input-month" name="month-birth">
                           <option placeholder value="null">ММ</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -372,7 +372,7 @@
                           <option value="11">11</option>
                           <option value="12">12</option>
                         </select>
-                        <select class="personal__select js-personal-select" name="year-birth">
+                        <select class="personal__select js-personal-select" id="personal__input-year" name="year-birth">
                           <option placeholder value="null">ГГГГ</option>
                           <option value="2000">2000</option>
                           <option value="2001">2001</option>
@@ -605,7 +605,7 @@
                       <div class="personal__input-label-wrap checkbox-wrap">
                         <label class="personal__input-label">
                           <input class="personal__input-checked" type="checkbox" name="consent-processing[]"
-                            value="Я подтверждаю, что внесенные мной данные полные и корректные." checked>
+                            value="Я подтверждаю, что внесенные мной данные полные и корректные." checked required>
                           <span>*</span>Я подтверждаю, что внесенные мной данные полные и корректные.
                         </label>
                         <div class="personal__tooltip-wrap">
@@ -630,7 +630,7 @@
                 <div class="personal__btn-wrap">
                   <!-- <button class="personal__btn registration__btn-prev" type="button"
                   data-href="#registration-next">Назад</button> -->
-                  <button class="personal__btn registration__btn-next" type="button"
+                  <button class="personal__btn registration__btn-next registration__btn-step-1" type="button"
                     data-href="#registration-next">Далее</button>
                 </div>
               </div>

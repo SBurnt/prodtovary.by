@@ -2,7 +2,7 @@
   &__btn-prev {
     display: none;
   }
-  
+
   &__content {
     .content {
       &__item {
@@ -114,7 +114,7 @@
 
     border-bottom: 2px solid #b2b4b3;
 
-    // pointer-events: none;
+    pointer-events: none;
 
     &::before {
       content: none;
