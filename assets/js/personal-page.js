@@ -16,11 +16,11 @@ function registration() {
       .addClass('active');
 
     if (attrID == 'tab3') {
-      $('.registration__btn-next').css('display', 'none');
+      $('.personal__btn-wrap').css('display', 'none');
       // $('.registration__btn-prev').addClass('last-question');
       // $('.registration__btn-send').css('display', 'inline-block');
     } else {
-      $('.registration__btn-next').css('display', 'inline-block');
+      $('.personal__btn-wrap').css('display', 'flex');
       // $('.registration__btn-prev').removeClass('last-question');
       // $('.registration__btn-send').css('display', 'none');
     }
