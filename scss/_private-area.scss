@@ -1,0 +1,16 @@
+.private {
+  &__owner {
+    display: block;
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    color: #9a9a9a;
+  }
+
+  .personal__page-order-link {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+}

@@ -1,5 +1,8 @@
-@import 'scss/_variables';
+@import 'scss/variables';
+@import 'scss/fonts';
 
-@import 'scss/_personal';
+@import 'scss/personal';
 @import 'scss/personal-login';
 @import "scss/personal-registration";
+@import "scss/private-area";
+@import "scss/purchases";

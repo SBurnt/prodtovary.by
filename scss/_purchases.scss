@@ -1,0 +1,80 @@
+.purchases {
+  margin-bottom: 25px;
+  &__quantity {
+    margin-bottom: 30px;
+  }
+  &__table {
+    width: 100%;
+
+    tr th {
+      padding: 3px 0 8px 0;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+      text-align: center;
+      color: #666666;
+
+      border-bottom: 1px solid #d9dbda;
+    }
+    tr td {
+      padding: 3px 0 8px 0;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+      text-align: center;
+      color: #999999;
+
+      &:last-child {
+        color: #50b36e;
+      }
+    }
+  }
+
+  &__info {
+    .personal__page-order-link {
+      margin-top: 25px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.quantity {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    margin: 0;
+    padding: 0;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    color: #898989;
+  }
+
+  &__count {
+    display: block;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    color: #898989;
+
+    &.discount {
+      color: #50b36e;
+    }
+  }
+}
