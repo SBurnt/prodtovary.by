@@ -147,7 +147,6 @@ const defaultSelectDateBirth = () => {
     });
   }
 };
-
 defaultSelectDateBirth();
 
 const defaultSelectMonthBirth = () => {
@@ -167,7 +166,6 @@ const defaultSelectMonthBirth = () => {
     });
   }
 };
-
 defaultSelectMonthBirth();
 
 const defaultSelectYearBirth = () => {
@@ -208,8 +206,22 @@ const defaultSelectPet = () => {
 };
 
 defaultSelectPet();
-
 // кастомный select на дату рождения END
 
 $('#personal__input-tel').mask('+375(99)999-99-99', { autoclear: false });
 $('#personal__input-card').mask('99999', { autoclear: false });
+
+const sliderPartners = document.querySelector('.js-partners-slider');
+if (sliderPartners) {
+  console.log('slider partners');
+  const swiper = new Swiper(sliderPartners, {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    centeredSlides: true,
+    // loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+}
