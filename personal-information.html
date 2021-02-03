@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>продтовары личный кабинет</title>
+  <link rel="stylesheet" href="assets/css/choices.min.css">
   <link rel="stylesheet" href="assets/css/template_ba749d5a1d75123713e551bed0f0268c_v1.css">
   <link rel="stylesheet" href="assets/css/personal-area.min.css">
 </head>
@@ -156,7 +157,7 @@
             <meta itemprop="position" content="2">
           </span>
         </div>
-        <h1 class="title">Восстановление пароля</h1>
+        <h1 class="title">Персональные данные</h1>
       </div>
     </div>
 
@@ -166,44 +167,136 @@
           <div class="personal__img-logo-wrap">
             <img class="personal__img-logo" src="assets/img/personal-page-logo.png" alt="логотип дома ждут">
           </div>
-          <div class="personal__entrance">
-            <a class="personal__entrance-link active" href="index.html">Вход</a>
-            <a class="personal__entrance-link" href="registration.html">Регистрация</a>
-          </div>
-          <div class="personal-recovery">
-            <span class="personal__title">Восстановление пароля</span>
-            <p class="personal__desc">Введите номер телефона, который был указан при регистрации карты. Мы отправим на
-              него SMS с данными для входа в личный кабинет</p>
-            <form class="personal-recovery__form" action="recovery-send.html">
-              <div class="personal__input-label-wrap">
-                <label class="personal__input-label" for="personal__input-tel">Номер телефона<span>*</span></label>
-                <div class="personal__tooltip-wrap">
-                  <button class="personal__tooltip" type="button" aria-describedby="personal__tooltip">
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M7.5 0C11.6423 0 15 3.3585 15 7.5C15 11.6415 11.6423 15 7.5 15C3.35775 15 0 11.6415 0 7.5C0 3.3585 3.35775 0 7.5 0ZM7.5 10.125C7.30109 10.125 7.11032 10.204 6.96967 10.3447C6.82902 10.4853 6.75 10.6761 6.75 10.875C6.75 11.0739 6.82902 11.2647 6.96967 11.4053C7.11032 11.546 7.30109 11.625 7.5 11.625C7.69891 11.625 7.88968 11.546 8.03033 11.4053C8.17098 11.2647 8.25 11.0739 8.25 10.875C8.25 10.6761 8.17098 10.4853 8.03033 10.3447C7.88968 10.204 7.69891 10.125 7.5 10.125ZM7.5 3.5625C6.95299 3.5625 6.42839 3.7798 6.04159 4.16659C5.6548 4.55339 5.4375 5.07799 5.4375 5.625C5.43754 5.76752 5.49168 5.90471 5.58898 6.00884C5.68628 6.11298 5.81947 6.17631 5.96166 6.18602C6.10385 6.19573 6.24442 6.15111 6.35497 6.06118C6.46553 5.97124 6.53782 5.84269 6.55725 5.7015L6.5625 5.625C6.5625 5.37636 6.66127 5.1379 6.83709 4.96209C7.0129 4.78627 7.25136 4.6875 7.5 4.6875C7.74864 4.6875 7.9871 4.78627 8.16291 4.96209C8.33873 5.1379 8.4375 5.37636 8.4375 5.625C8.4375 6.02925 8.33625 6.22875 7.95375 6.624L7.8525 6.7275C7.194 7.386 6.9375 7.81275 6.9375 8.625C6.9375 8.77418 6.99676 8.91726 7.10225 9.02275C7.20774 9.12824 7.35082 9.1875 7.5 9.1875C7.64918 9.1875 7.79226 9.12824 7.89775 9.02275C8.00324 8.91726 8.0625 8.77418 8.0625 8.625C8.0625 8.22075 8.16375 8.02125 8.54625 7.626L8.6475 7.5225C9.306 6.864 9.5625 6.43725 9.5625 5.625C9.5625 5.07799 9.3452 4.55339 8.95841 4.16659C8.57161 3.7798 8.04701 3.5625 7.5 3.5625Z"
-                        fill="#D1D1D1" />
-                    </svg>
-                  </button>
-                  <div class="personal__tooltip-text" role="tooltip" id="personal__tooltip">введите необходимую
-                    информацию</div>
+          <div class="personal-information">
+            <form action="private-area.html">
+              <span class="personal__title">Персональные данные:</span>
+
+              <div class="registration__group">
+                <ul class="client-info__list">
+                  <li class="client-info__item person">Фамилия:&nbsp;
+                    <span class="client-info__item-value">Вербилевич</span>
+                    <button class="client-info__btn-edit" type="button" data-path="modal-edit-person"
+                      data-animation="fadeInUp" data-speed="300">Изменить</button>
+                  </li>
+                  <li class="client-info__item person">Имя:&nbsp;Мирослав</li>
+                  <li class="client-info__item person">Фамилия:&nbsp;Владиславович</li>
+                  <li class="client-info__item birthday">Дата рождения:&nbsp;22.06.1991</li>
+                  <li class="client-info__item phone">Номер телефона:&nbsp;
+                    <span class="client-info__item-value">+375291668056</span>
+                    <button class="client-info__btn-edit" type="button" data-path="modal-edit-person"
+                      data-animation="fadeInUp" data-speed="300">Изменить</button>
+                  </li>
+                  <li class="client-info__item email">E-mail:&nbsp;
+                    <span class="client-info__item-value">vmv@prodtovary.com</span>
+                    <button class="client-info__btn-edit" type="button" data-path="modal-edit-person"
+                      data-animation="fadeInUp" data-speed="300">Изменить</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="registration__group">
+                <ul class="pet-info__list">
+                  <li class="pet-info__item">Питомец:&nbsp;Собака
+                    <button class="pet-info__btn-del" type="button">Удалить питомца</button>
+                  </li>
+                  <li class="pet-info__item">Кличка:&nbsp;Боня</li>
+                  <li class="pet-info__item">Порода:&nbsp;йоркширский терьер</li>
+                </ul>
+              </div>
+
+              <button class="registration__add-pet" type="button">
+                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1" y="1" width="27" height="27" rx="13.5" stroke="#B2B4B3" stroke-width="2" />
+                  <path d="M14.5 8V20.5" stroke="#B2B4B3" stroke-width="2" stroke-linecap="round" />
+                  <path d="M20.75 14.25L8.25 14.25" stroke="#B2B4B3" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                Добавить еще питомца
+              </button>
+
+              <div class="registration__group">
+                <div class="personal__input-label-wrap checkbox-wrap">
+                  <label class="personal__input-label">
+                    <input class="personal__input-checked" type="checkbox" name="consent-processing[]" value="Я даю свое согласие на участие в рекламных играх, розыгрышах, акциях и других мероприятиях
+                      компании.">
+                    <div>
+                      Я даю свое согласие на участие в рекламных играх, розыгрышах, акциях и других мероприятиях
+                      компании.
+                      <div class="personal__tooltip-wrap">
+                        <button class="personal__tooltip" type="button" aria-describedby="personal__tooltip">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M7.5 0C11.6423 0 15 3.3585 15 7.5C15 11.6415 11.6423 15 7.5 15C3.35775 15 0 11.6415 0 7.5C0 3.3585 3.35775 0 7.5 0ZM7.5 10.125C7.30109 10.125 7.11032 10.204 6.96967 10.3447C6.82902 10.4853 6.75 10.6761 6.75 10.875C6.75 11.0739 6.82902 11.2647 6.96967 11.4053C7.11032 11.546 7.30109 11.625 7.5 11.625C7.69891 11.625 7.88968 11.546 8.03033 11.4053C8.17098 11.2647 8.25 11.0739 8.25 10.875C8.25 10.6761 8.17098 10.4853 8.03033 10.3447C7.88968 10.204 7.69891 10.125 7.5 10.125ZM7.5 3.5625C6.95299 3.5625 6.42839 3.7798 6.04159 4.16659C5.6548 4.55339 5.4375 5.07799 5.4375 5.625C5.43754 5.76752 5.49168 5.90471 5.58898 6.00884C5.68628 6.11298 5.81947 6.17631 5.96166 6.18602C6.10385 6.19573 6.24442 6.15111 6.35497 6.06118C6.46553 5.97124 6.53782 5.84269 6.55725 5.7015L6.5625 5.625C6.5625 5.37636 6.66127 5.1379 6.83709 4.96209C7.0129 4.78627 7.25136 4.6875 7.5 4.6875C7.74864 4.6875 7.9871 4.78627 8.16291 4.96209C8.33873 5.1379 8.4375 5.37636 8.4375 5.625C8.4375 6.02925 8.33625 6.22875 7.95375 6.624L7.8525 6.7275C7.194 7.386 6.9375 7.81275 6.9375 8.625C6.9375 8.77418 6.99676 8.91726 7.10225 9.02275C7.20774 9.12824 7.35082 9.1875 7.5 9.1875C7.64918 9.1875 7.79226 9.12824 7.89775 9.02275C8.00324 8.91726 8.0625 8.77418 8.0625 8.625C8.0625 8.22075 8.16375 8.02125 8.54625 7.626L8.6475 7.5225C9.306 6.864 9.5625 6.43725 9.5625 5.625C9.5625 5.07799 9.3452 4.55339 8.95841 4.16659C8.57161 3.7798 8.04701 3.5625 7.5 3.5625Z"
+                              fill="#D1D1D1" />
+                          </svg>
+                        </button>
+                        <div class="personal__tooltip-text" role="tooltip" id="personal__tooltip">введите необходимую
+                          информацию</div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="personal__input-label-wrap checkbox-wrap">
+                  <label class="personal__input-label">
+                    <input class="personal__input-checked" type="checkbox" name="consent-processing[]"
+                      value="Я согласен(сна) получать SMS и Viber-рассылки (не чаще 2 раз в месяц)">
+                    <div>
+                      Я согласен(сна) получать SMS и Viber-рассылки (не чаще 2 раз в месяц).
+                      <div class="personal__tooltip-wrap">
+                        <button class="personal__tooltip" type="button" aria-describedby="personal__tooltip">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M7.5 0C11.6423 0 15 3.3585 15 7.5C15 11.6415 11.6423 15 7.5 15C3.35775 15 0 11.6415 0 7.5C0 3.3585 3.35775 0 7.5 0ZM7.5 10.125C7.30109 10.125 7.11032 10.204 6.96967 10.3447C6.82902 10.4853 6.75 10.6761 6.75 10.875C6.75 11.0739 6.82902 11.2647 6.96967 11.4053C7.11032 11.546 7.30109 11.625 7.5 11.625C7.69891 11.625 7.88968 11.546 8.03033 11.4053C8.17098 11.2647 8.25 11.0739 8.25 10.875C8.25 10.6761 8.17098 10.4853 8.03033 10.3447C7.88968 10.204 7.69891 10.125 7.5 10.125ZM7.5 3.5625C6.95299 3.5625 6.42839 3.7798 6.04159 4.16659C5.6548 4.55339 5.4375 5.07799 5.4375 5.625C5.43754 5.76752 5.49168 5.90471 5.58898 6.00884C5.68628 6.11298 5.81947 6.17631 5.96166 6.18602C6.10385 6.19573 6.24442 6.15111 6.35497 6.06118C6.46553 5.97124 6.53782 5.84269 6.55725 5.7015L6.5625 5.625C6.5625 5.37636 6.66127 5.1379 6.83709 4.96209C7.0129 4.78627 7.25136 4.6875 7.5 4.6875C7.74864 4.6875 7.9871 4.78627 8.16291 4.96209C8.33873 5.1379 8.4375 5.37636 8.4375 5.625C8.4375 6.02925 8.33625 6.22875 7.95375 6.624L7.8525 6.7275C7.194 7.386 6.9375 7.81275 6.9375 8.625C6.9375 8.77418 6.99676 8.91726 7.10225 9.02275C7.20774 9.12824 7.35082 9.1875 7.5 9.1875C7.64918 9.1875 7.79226 9.12824 7.89775 9.02275C8.00324 8.91726 8.0625 8.77418 8.0625 8.625C8.0625 8.22075 8.16375 8.02125 8.54625 7.626L8.6475 7.5225C9.306 6.864 9.5625 6.43725 9.5625 5.625C9.5625 5.07799 9.3452 4.55339 8.95841 4.16659C8.57161 3.7798 8.04701 3.5625 7.5 3.5625Z"
+                              fill="#D1D1D1" />
+                          </svg>
+                        </button>
+                        <div class="personal__tooltip-text" role="tooltip" id="personal__tooltip">введите необходимую
+                          информацию</div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="personal__input-label-wrap checkbox-wrap">
+                  <label class="personal__input-label">
+                    <input class="personal__input-checked" type="checkbox" name="consent-processing[]" value="Я согласен(сна) получать акции и специальные предложения на электронную почту (не чаще 2 раз в
+                    месяц)">
+                    <div>
+                      Я согласен(сна) получать акции и специальные предложения на электронную почту (не чаще 2 раз в
+                      месяц).
+                      <div class="personal__tooltip-wrap">
+                        <button class="personal__tooltip" type="button" aria-describedby="personal__tooltip">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M7.5 0C11.6423 0 15 3.3585 15 7.5C15 11.6415 11.6423 15 7.5 15C3.35775 15 0 11.6415 0 7.5C0 3.3585 3.35775 0 7.5 0ZM7.5 10.125C7.30109 10.125 7.11032 10.204 6.96967 10.3447C6.82902 10.4853 6.75 10.6761 6.75 10.875C6.75 11.0739 6.82902 11.2647 6.96967 11.4053C7.11032 11.546 7.30109 11.625 7.5 11.625C7.69891 11.625 7.88968 11.546 8.03033 11.4053C8.17098 11.2647 8.25 11.0739 8.25 10.875C8.25 10.6761 8.17098 10.4853 8.03033 10.3447C7.88968 10.204 7.69891 10.125 7.5 10.125ZM7.5 3.5625C6.95299 3.5625 6.42839 3.7798 6.04159 4.16659C5.6548 4.55339 5.4375 5.07799 5.4375 5.625C5.43754 5.76752 5.49168 5.90471 5.58898 6.00884C5.68628 6.11298 5.81947 6.17631 5.96166 6.18602C6.10385 6.19573 6.24442 6.15111 6.35497 6.06118C6.46553 5.97124 6.53782 5.84269 6.55725 5.7015L6.5625 5.625C6.5625 5.37636 6.66127 5.1379 6.83709 4.96209C7.0129 4.78627 7.25136 4.6875 7.5 4.6875C7.74864 4.6875 7.9871 4.78627 8.16291 4.96209C8.33873 5.1379 8.4375 5.37636 8.4375 5.625C8.4375 6.02925 8.33625 6.22875 7.95375 6.624L7.8525 6.7275C7.194 7.386 6.9375 7.81275 6.9375 8.625C6.9375 8.77418 6.99676 8.91726 7.10225 9.02275C7.20774 9.12824 7.35082 9.1875 7.5 9.1875C7.64918 9.1875 7.79226 9.12824 7.89775 9.02275C8.00324 8.91726 8.0625 8.77418 8.0625 8.625C8.0625 8.22075 8.16375 8.02125 8.54625 7.626L8.6475 7.5225C9.306 6.864 9.5625 6.43725 9.5625 5.625C9.5625 5.07799 9.3452 4.55339 8.95841 4.16659C8.57161 3.7798 8.04701 3.5625 7.5 3.5625Z"
+                              fill="#D1D1D1" />
+                          </svg>
+                        </button>
+                        <div class="personal__tooltip-text" role="tooltip" id="personal__tooltip">введите необходимую
+                          информацию</div>
+                      </div>
+                    </div>
+                  </label>
                 </div>
               </div>
-              <div class="personal__input-wrap">
-                <input class="personal__input" id="personal__input-tel" type="tel" name="recovery" inputmode="tel"
-                  placeholder="+375(__)___-__-__" autocomplete="off">
-                <img class="personal__input-img" src="assets/img/ico-phone.png" alt="ico phone">
-              </div>
-              <div class="personal__btn-wrap">
-                <button class="personal__btn personal-recovery__btn" type="submit">Отправить</button>
+
+              <div class="personal__page-back-link-wrap">
+                <button class="personal__btn personal-information__btn-link" type="submit">Сохранить</button>
+                <a class="personal__btn personal-information__btn-link" href="private-area.html">Назад</a>
               </div>
             </form>
-            <p class="personal__text">SMS не пришло? Обратитесь в службу поддержки по адресу <a
-                href="mailto:support@prodtovary.com">support@prodtovary.com</a>
-            </p>
           </div>
-          <div class="personal__page-back-link-wrap">
-            <a class="personal__page-back-link" href="index.html">Назад</a>
+
+          <div class="social__wrap">
+            <a class="social__link instagram-link" href="https://www.instagram.com/doma.zhdut./" target="_blank">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram-square"
+                class="svg-inline--fa fa-instagram-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512">
+                <path fill="#898989"
+                  d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z">
+                </path>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -317,7 +410,33 @@
         </div>
       </div>
     </footer>
+
+    <div class="modals fix-block">
+      <div class="modal__container modal-edit-person" data-target="modal-edit-person">
+        <button class="modal__close">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L17 17" stroke="#999999" stroke-width="2" stroke-linecap="round" />
+            <path d="M17 1L1 17" stroke="#999999" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div class="modal-edit-person__content">
+          <div class="personal__input-label-wrap">
+            <label class="personal__input-label" for="personal__input-surname">Введите актуальные данные</label>
+          </div>
+          <div class="personal__input-wrap">
+            <input class="personal__input js-input-modal" id="personal__input-surname" type="text" name="surname"
+              placeholder="Данные" maxlength="20">
+          </div>
+          <div class="personal__page-back-link-wrap">
+            <button class="personal__btn personal-information__btn-link ok" type="submit">Ок</button>
+            <button class="personal__btn personal-information__btn-link cancel" type="button">Отмена</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
+  <script src="assets/js/choices.min.js"></script>
   <script src="assets/js/template_2a26a805a9dbec386086e026ab732ee7_v1.js"></script>
   <script src="assets/js/personal-page.js"></script>
 </body>

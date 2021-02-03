@@ -1,0 +1,13 @@
+.modal-edit-person {
+  width: 95%;
+  max-width: 444px;
+
+  &__content {
+    max-width: 309px;
+    margin: 0 auto;
+  }
+
+  .personal__input {
+    padding: 7px 20px;
+  }
+}

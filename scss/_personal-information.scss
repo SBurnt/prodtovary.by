@@ -1,0 +1,130 @@
+.personal-information {
+  &__btn-link {
+    display: inline-block;
+    max-width: 135px;
+    padding: 11px;
+
+    text-decoration: none;
+  }
+
+  .registration__add-pet {
+    margin-bottom: 30px;
+  }
+}
+
+.client-info {
+  &__item {
+    padding-left: 22px;
+
+    font-size: 14px;
+    line-height: 15px;
+    color: #9a9a9a;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 0;
+
+      border-radius: 0;
+    }
+
+    &.person::before {
+      width: 11px;
+      height: 11px;
+
+      background: url(../img/ico-person-pers.png) no-repeat;
+    }
+
+    &.birthday::before {
+      width: 11px;
+      height: 11px;
+
+      background: url(../img/ico-birthday-pers.png) no-repeat;
+    }
+
+    &.phone::before {
+      width: 6px;
+      height: 11px;
+
+      background: url(../img/ico-phone-pers.png) no-repeat;
+    }
+
+    &.email::before {
+      top: 4px;
+
+      width: 11px;
+      height: 7px;
+
+      background: url(../img/ico-email-pers.png) no-repeat;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 10px !important;
+  }
+
+  &__btn-edit {
+    margin-left: 5px;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 15px;
+    color: #29a1ba;
+    text-decoration: underline;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.pet-info {
+  &__item {
+    position: relative;
+
+    padding-left: 22px;
+
+    font-size: 14px;
+    line-height: 15px;
+    color: #9a9a9a;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 0;
+
+      width: 10px;
+      height: 10px;
+
+      background: url(../img/ico-lapa-pers.png) no-repeat;
+      border-radius: 0;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 10px !important;
+  }
+
+  &__btn-del {
+    margin-left: 5px;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 15px;
+    color: #29a1ba;
+    text-decoration: underline;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

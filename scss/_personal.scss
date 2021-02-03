@@ -260,6 +260,10 @@
     }
   }
 
+  &__input-label-wrap.checkbox-wrap:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
   &__input-label {
     font-size: 16px;
     line-height: 17px;
