@@ -431,9 +431,8 @@ if (btnClientInfoEdit) {
 
 // добавление удаление питомцев START
 const btnRegNewAnimal = document.querySelector('.registration__add-pet');
-let cnt = 1;
 
-let cardTemplate = (number) =>
+const cardTemplate = 
   `
     <div class="registration__group">
     <button class="registration__del-pet" type="button">Удалить питомца</button>
@@ -508,12 +507,8 @@ let cardTemplate = (number) =>
 let animalBlock = document.querySelector('.registration__group--animals');
 
 btnRegNewAnimal.addEventListener('click', () => {
-  animalBlock.innerHTML += cardTemplate(cnt);
+  animalBlock.insertAdjacentHTML('beforeend', cardTemplate);
   defaultSelectPet();
-  defaultSelectYearBirth();
-  defaultSelectMonthBirth();
-  defaultSelectDateBirth();
-  cnt++;
 });
 
 animalBlock.addEventListener('click', (event) => {
@@ -521,7 +516,6 @@ animalBlock.addEventListener('click', (event) => {
 
   if (target.classList.contains('registration__del-pet')) {
     target.closest('.registration__group').remove();
-    cnt--;
   }
 });
 // добавление удаление питомцев END
